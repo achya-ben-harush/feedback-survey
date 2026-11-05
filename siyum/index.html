@@ -392,6 +392,7 @@ function buildFields(){
     else if(v==='__other') v = 'אחר: '+(A[q.id+'__other']||'').trim();
     out.push({id:q.id, label:q.label.replace(/<[^>]+>/g,''), value:v});
   });
+  out.push({id:'scale', label:'סולם הדירוג', value:'1–10'});
   return out;
 }
 let sending=false;

@@ -1,7 +1,8 @@
 # פרויקט: שאלון משוב תקופתי
 
 השאלון בכתובת https://feedback.achya-ben-harush.com. בתחילת כל עבודה טוענים את סקיל המותג `achiya-brand`.
-- באוויר: פרויקט Cloudflare Pages `achiya-feedback`. פקודת ה-build מעתיקה ל-`dist` את `index.html`, `img/` ו-`siyum/`, ומוחקת את `siyum/bridge.gs` כדי שהקוד של גוגל לא יהיה ציבורי.
+- באוויר: פרויקט Cloudflare Pages `achiya-feedback`. פקודת ה-build היא `sh build.sh`: מעתיקה ל-`dist` את `index.html`, `img/`, `siyum/` ו-`bitul/`, ומוחקת את כל קבצי `bridge.gs` כדי שהקוד של גוגל לא יהיה ציבורי. תיקייה חדשה של שאלון מוסיפים בתוך `build.sh`.
+- שלושה שאלונים נפרדים: `/` תקופתי, `/siyum/` סיום מנוי, `/bitul/` ביטול מנוי (שאלון פרידה). לכל אחד גיליון וגשר משלו.
 - התשובות נשמרות בגיליון גוגל, דרך Apps Script. הגיליון לא משותף לציבור.
 - `draft-claude-artifact.html` היא טיוטה ישנה ולא עולה לאוויר.
 - המשתמש אינו טכני: מדברים איתו בעברית פשוטה.
